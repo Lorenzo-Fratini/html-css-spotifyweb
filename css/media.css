@@ -1,0 +1,59 @@
+@media all and (max-width: 600px) {
+  .nav-bar {
+    width: 50px;
+  }
+
+  .nav {
+    margin-top: 10px;
+  }
+
+  .nav-text {
+    display: none;
+  }
+
+  .nav a {
+    padding: 0;
+    border: none;
+  }
+
+  .nav a img {
+    margin: 0 auto;
+  }
+
+  .playlist {
+    display: none;
+  }
+
+  .logo-cont {
+    padding: 5px 0;
+    height: auto;
+  }
+
+  .logo-cont a:first-child img {
+    display: none;
+  }
+
+  .logo-cont a:last-child img {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .user-cont {
+    padding: 0;
+  }
+
+  .installation {
+    border: none;
+  }
+
+  .installation a img,
+  .user a img {
+    margin: 0 auto;
+  }
+
+  .main {
+    width: calc(100% - 50px);
+  }
+
+}
