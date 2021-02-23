@@ -9,6 +9,7 @@
     <title>Spotify</title>
   </head>
   <body>
+    <!-- left navbar -->
     <div class="main-cont">
       <div class="nav-bar">
         <div class="logo-cont">
@@ -75,19 +76,210 @@
           <div class="user">
             <a href="#">
               <img src="img/profile.svg" alt="profile">
-              <span class="nav-text">Jhon Doe</span>
+              <span class="nav-text">John Doe</span>
             </a>
           </div>
         </div>
       </div>
+      <!-- right main -->
+      <!-- overlay -->
       <div class="main">
         <div class="upgrade-overlay">
           <a href="#">EFFETTUA L'UPGRADE</a>
         </div>
+        <!-- main nav -->
+        <div class="main-nav">
+          <ul>
+            <li>
+              <a href="#">IN EVIDENZA</a>
+              <div class="main-nav-check"></div>
+            </li>
+            <li>
+              <a href="#">PODCAST</a>
+            </li>
+            <li>
+              <a href="#">CLASSIFICHE</a>
+            </li>
+            <li>
+              <a href="#">GENERI E MOOD</a>
+            </li>
+            <li>
+              <a href="#">NUOVE USCITE</a>
+            </li>
+            <li>
+              <a href="#">SCOPRI</a>
+            </li>
+          </ul>
+        </div>
+        <!-- main cont -->
+        <!-- first row -->
+        <h2>Recently Played</h2>
+        <div class="song-cont">
+          <!-- metal -->
+          <div class="song">
+            <div class="song-img">
+              <img src="img/metal_lifting.jpg" alt="metal cover">
+              <div class="song-overlay">
+                <i class="far fa-play-circle"></i>
+              </div>
+            </div>
+            <h3>Heavy Metal</h3>
+            <h4>Subtitle</h4>
+          </div>
+          <!-- stranger things -->
+          <div class="song">
+            <div class="song-img">
+              <img src="img/stranger.jpeg" alt="stranger things cover">
+              <div class="song-overlay">
+                <i class="far fa-play-circle"></i>
+              </div>
+            </div>
+            <h3>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
+            <h4>Kyle Dixon & Michael Stein</h4>
+          </div>
+          <!-- a quiet place -->
+          <div class="song">
+            <div class="song-img">
+              <img src="img/aquietplace.jpeg" alt="a quiet place cover">
+              <div class="song-overlay">
+                <i class="far fa-play-circle"></i>
+              </div>
+            </div>
+            <h3>A quiet place</h3>
+            <h4>Subtitle</h4>
+          </div>
+          <!-- split -->
+          <div class="song">
+            <div class="song-img">
+              <img src="img/split.jpeg" alt="split cover">
+              <div class="song-overlay">
+                <i class="far fa-play-circle"></i>
+              </div>
+            </div>
+            <h3>Split</h3>
+            <h4>Subtitle</h4>
+          </div>
+          <!-- wellness -->
+          <div class="song">
+            <div class="song-img">
+              <img src="img/cure.jpeg" alt="wellness cover">
+              <div class="song-overlay">
+                <i class="far fa-play-circle"></i>
+              </div>
+            </div>
+            <h3>A cure for wellness</h3>
+            <h4>Subtitle</h4>
+          </div>
+          <!-- sinister -->
+          <div class="song">
+            <div class="song-img">
+              <img src="img/sinister.jpeg" alt="sinister cover">
+              <div class="song-overlay">
+                <i class="far fa-play-circle"></i>
+              </div>
+            </div>
+            <h3>Sinister</h3>
+            <h4>Subtitle</h4>
+          </div>
+        </div>
+        <!-- second row -->
+        <h2>Creato per John Doe</h2>
+        <h4>Più ascolti, più accurati saranno i tuoi suggerimenti</h4>
+        <div class="song-cont">
+          <div class="song">
+            <div class="song-img">
+              <img src="img/radar.jpeg" alt="sinister cover">
+              <div class="song-overlay">
+                <i class="far fa-play-circle"></i>
+              </div>
+            </div>
+            <h3>Release Radar</h3>
+          </div>
+          <div class="song">
+            <div class="song-img">
+              <img src="img/mixdaily.jpeg" alt="sinister cover">
+              <div class="song-overlay">
+                <i class="far fa-play-circle"></i>
+              </div>
+            </div>
+            <h3>Daily Mix 1</h3>
+          </div>
+        </div>
+        <!-- third row -->
+        <h2>Artisti più popolari</h2>
+        <h4>Più ascolti, più accurati saranno i tuoi suggerimenti</h4>
+        <div class="song-cont">
+          <div class="song">
+            <div class="song-img img-circle">
+              <img src="img/youg.jpeg" alt="lana del rey cover">
+              <div class="song-overlay">
+                <i class="far fa-play-circle"></i>
+              </div>
+            </div>
+            <h3>Lana Del Rey</h3>
+          </div>
+          <div class="song">
+            <div class="song-img img-circle">
+              <img src="img/einaudi.jpeg" alt="einaudi cover">
+              <div class="song-overlay">
+                <i class="far fa-play-circle"></i>
+              </div>
+            </div>
+            <h3>Einaudi</h3>
+          </div>
+        </div>
       </div>
     </div>
+    <!-- player-bar -->
     <div class="player-bar">
-
+      <div class="in-playback">
+        <div class="album-cover">
+          <img src="img/sinister.jpeg" alt="album cover">
+          <div class="cover-title">
+            <h3>Sinister</h3>
+            <h4>Brano Nome</h4>
+          </div>
+        </div>
+        <div class="playback-icon">
+          <i class="far fa-heart"></i>
+          <i class="far fa-folder"></i>
+        </div>
+      </div>
+      <!-- player -->
+      <div class="player-controller">
+        <div class="controller-icon">
+          <i class="fas fa-random"></i>
+          <i class="fas fa-step-backward"></i>
+          <i class="far fa-play-circle"></i>
+          <i class="fas fa-step-forward"></i>
+          <i class="fas fa-redo-alt"></i>
+        </div>
+        <div class="time-cont">
+          <div class="time-passed">
+            0.25
+          </div>
+          <div class="time-bar">
+            <div class="time-active">
+              <i class="fas fa-circle"></i>
+            </div>
+          </div>
+          <div class="remaining-time">
+            4.35
+          </div>
+        </div>
+      </div>
+      <div class="player-tools">
+        <i class="fas fa-list"></i>
+        <i class="fas fa-desktop"></i>
+        <div class="volume-cont">
+          <i class="fas fa-volume-up"></i>
+          <div class="volume-bar">
+            <div class="volume-active">
+              <i class="fas fa-circle"></i>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

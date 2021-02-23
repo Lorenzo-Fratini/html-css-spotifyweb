@@ -1,4 +1,50 @@
-@media all and (max-width: 600px) {
+@media all and (max-width: 850px) {
+  .player-controller {
+    width: 210px;
+  }
+
+  .time-cont {
+    width: 100%;
+  }
+
+  .main-nav ul {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 680px) {
+  .playback-icon {
+    margin: 0 0 0 5px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .playback-icon i:nth-child(n+2) {
+    margin: 0;
+  }
+
+  .in-playback {
+    width: 165px;
+  }
+
+  .main-nav ul {
+    width: 90%;
+  }
+
+  .album-cover {
+    width: 140px;
+  }
+
+  .cover-title {
+    margin: 0 0 0 2px;
+  }
+
+  .player-tools {
+    width: 160px;
+  }
+}
+
+@media all and (max-width: 575px) {
   .nav-bar {
     width: 50px;
   }
@@ -55,5 +101,20 @@
   .main {
     width: calc(100% - 50px);
   }
+}
 
+@media all and (max-height: 629px) {
+  .playlist ul {
+    height: 155px;
+  }
+}
+
+@media all and (max-height: 570px) {
+  .playlist ul {
+    height: 100px;
+  }
+
+  .user-cont {
+    position: relative;
+  }
 }

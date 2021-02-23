@@ -33,21 +33,31 @@ li{
   margin-top: 10px;
 }
 
-h3 {
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
   color: #fff;
+  margin: 40px 0 0 0;
+}
+
+h3 {
   font-size: 1rem;
+  color: #fff;
+}
+
+i {
+  cursor: pointer;
 }
 
 .main-cont {
   width: 100%;
-  height: 100vh;
-  padding: 0 0 100px 0;
+  height: calc(100vh - 100px);
   display: flex;
 }
 
 /* nav-bar */
 .nav-bar {
-  width: 200px;
+  width: 230px;
   height: 100%;
   padding: 0 0 80px 0;
   background: #000;
@@ -62,7 +72,7 @@ h3 {
 }
 
 .logo-cont a:first-child img {
-  width: 90%;
+  width: 70%;
   color: #fff;
 }
 
@@ -143,6 +153,13 @@ a.checked {
   padding: 10px 0;
 }
 
+.user .nav-text {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-left: 10px;
+  color: #fff;
+}
+
 .installation a,
 .user a {
   display: block;
@@ -160,7 +177,7 @@ a.checked {
 .main {
   width: calc(100% - 200px);
   height: 100%;
-  padding: 80px 0 0 0;
+  padding: 80px 20px 20px 20px;
   background: #141922;
   overflow: auto;
   position: relative;
@@ -185,12 +202,250 @@ a.checked {
   border-radius: 20px;
 }
 
+.upgrade-overlay a:hover {
+  transform: scale(1.1);
+}
+
+.main-nav ul {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-nav ul li {
+  display: inline-block;
+}
+
+.main-nav ul li:nth-child(n+2) {
+  margin-left: 10px;
+}
+
+.main-nav-check {
+  width: 40%;
+  margin: 0 auto;
+  border-bottom: 3px solid #adff2f;
+}
+
+/* song-cont */
+.song-cont {
+  width: 100%;
+  margin: 40px 0 0 0;
+  display: flex;
+  align-items: flex-start
+}
+
+.song-cont h4 {
+  margin: 5px 0 0 0;
+}
+
+.song {
+  width: calc(100% / 7);
+  text-align: center;
+}
+
+.song:nth-child(n+2) {
+  margin-left: 15px;
+}
+
+.song h3 {
+  margin: 10px 0 0 0;
+}
+
+.song-img {
+  position: relative;
+}
+
+.song-img img {
+  width: 100%;
+}
+
+.img-circle img,
+.img-circle .song-overlay {
+  border-radius: 50%;
+}
+
+.song-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.song-overlay i {
+  font-size: 3rem;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.song-img:hover .song-overlay {
+  display: block;
+}
+
 /* player-bar */
 .player-bar {
   width: 100%;
   min-height: 100px;
   background: #282828;
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 99;
+}
+
+.in-playback {
+  width: 220px;
+  padding: 20px 0 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.album-cover {
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.album-cover img {
+  width: 50px;
+}
+
+.playback-icon i:nth-child(1n+2) {
+  margin: 0 0 0 5px;
+}
+
+/* player */
+.player-controller {
+  width: 50%;
+  padding: 15px 0;
+}
+
+.controller-icon {
+  width: 200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.controller-icon i {
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.controller-icon i.fa-play-circle {
+  font-size: 1.8rem;
+}
+
+.controller-icon i.fa-play-circle:hover {
+  transform: scale(1.1);
+}
+
+.time-passed {
+  margin-right: 5px;
+}
+
+.remaining-time {
+  margin-left: 5px;
+}
+
+.player-tools {
+  width: 190px;
+  padding: 20px 10px 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.player-tools i {
+  color: #fff;
+}
+
+.volume-cont,
+.time-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.time-cont{
+  width: 50%;
+  margin: 10px auto;
+}
+
+.volume-cont i {
+  margin-right: 5px;
+}
+
+.time-bar,
+.volume-bar {
+  height: 0;
+  border: 2px solid #5a5a5a;
+  border-radius: 1px;
+  cursor: pointer;
+  position: relative;
+}
+
+.time-bar {
+  width: 500px;
+}
+
+.volume-bar {
+  width: 80px;
+}
+
+ .time-active,
+ .volume-active {
+  height: 0;
+  border: 2px solid #ccc;
+  border-radius: 1px;
+  position: absolute;
+}
+
+.time-active {
+  width: 75px;
+  left: -1px;
+  top: -2px;
+}
+
+.volume-active {
+  width: 35px;
+  left: -1px;
+  top: -1px;
+}
+
+.time-active i,
+.volume-active i {
+  display: none;
+  font-size: 10px;
+  color: #fff;
+  position: absolute;
+}
+
+.time-active i {
+  top: -4.5px;
+  right: -10px;
+}
+
+.volume-active i {
+  top: -5px;
+  right: -10px;
+}
+
+.time-bar:hover .time-active,
+.volume-bar:hover .volume-active {
+  border: 2px solid #adff2f;
+}
+
+.time-bar:hover .time-active i,
+.volume-bar:hover .volume-active i {
+  display: block;
 }
