@@ -42,7 +42,7 @@
   }
 
   .in-playback {
-    width: 165px;
+    flex-basis: 175px;
   }
 
   .main-nav ul {

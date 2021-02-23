@@ -207,7 +207,7 @@ a.checked {
 }
 
 .main-nav ul {
-  width: 50%;
+  width: 55%;
   margin: 0 auto;
   text-align: center;
 }
@@ -322,10 +322,14 @@ a.checked {
   margin: 0 0 0 5px;
 }
 
+.playback-icon i:hover {
+  color: #fff;
+}
+
 /* player */
 .player-controller {
   width: 50%;
-  padding: 15px 0;
+  padding: 13px 0;
 }
 
 .controller-icon {
@@ -342,7 +346,7 @@ a.checked {
 }
 
 .controller-icon i.fa-play-circle {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .controller-icon i.fa-play-circle:hover {
@@ -387,9 +391,9 @@ a.checked {
 
 .time-bar,
 .volume-bar {
-  height: 0;
-  border: 2px solid #5a5a5a;
-  border-radius: 1px;
+  height: 4px;
+  background: #5a5a5a;
+  border-radius: 5px;
   cursor: pointer;
   position: relative;
 }
@@ -404,22 +408,20 @@ a.checked {
 
  .time-active,
  .volume-active {
-  height: 0;
-  border: 2px solid #ccc;
-  border-radius: 1px;
+  height: 4px;
+  background: #ccc;
+  border-radius: 5px;
   position: absolute;
+  left: 0px;
+  top: 0px;
 }
 
 .time-active {
   width: 75px;
-  left: -1px;
-  top: -2px;
 }
 
 .volume-active {
   width: 35px;
-  left: -1px;
-  top: -1px;
 }
 
 .time-active i,
@@ -428,21 +430,14 @@ a.checked {
   font-size: 10px;
   color: #fff;
   position: absolute;
-}
-
-.time-active i {
   top: -4.5px;
-  right: -10px;
-}
-
-.volume-active i {
-  top: -5px;
-  right: -10px;
+  right: -9px;
 }
 
 .time-bar:hover .time-active,
 .volume-bar:hover .volume-active {
   border: 2px solid #adff2f;
+  background: #adff2f;
 }
 
 .time-bar:hover .time-active i,
