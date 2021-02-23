@@ -1,3 +1,13 @@
+@media all and (max-width: 991px) {
+  .song {
+    width: calc(100% / 5);
+  }
+
+  .song:nth-child(2n+5) {
+    margin-left: 0;
+  }
+}
+
 @media all and (max-width: 850px) {
   .player-controller {
     width: 210px;
@@ -10,6 +20,14 @@
   .main-nav ul {
     width: 80%;
   }
+
+  /* .song {
+    width: calc(100% / 5);
+  }
+
+  .song:nth-child(2n+3) {
+    margin-left: 0;
+  } */
 }
 
 @media all and (max-width: 680px) {
@@ -41,6 +59,22 @@
 
   .player-tools {
     width: 160px;
+  }
+
+  .song-cont {
+    justify-content: space-between;
+  }
+
+  .song {
+    width: 49%;
+  }
+
+  .song:nth-child(n+2) {
+    margin-left: 0;
+  }
+
+  .song:nth-child(n+3) {
+    margin-top: 10px;
   }
 }
 
