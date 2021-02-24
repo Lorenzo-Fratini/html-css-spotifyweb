@@ -1,10 +1,18 @@
 @media all and (max-width: 991px) {
-  .song {
-    width: calc(100% / 5);
+  .body {
+    font-size: 13px;
   }
 
-  .song:nth-child(2n+5) {
+  .song {
+    width: 20%;
+  }
+
+  .song:nth-child(4n+5) {
     margin-left: 0;
+  }
+
+  .song:nth-child(n+5) {
+    margin-top: 10px;
   }
 }
 
@@ -20,14 +28,6 @@
   .main-nav ul {
     width: 80%;
   }
-
-  /* .song {
-    width: calc(100% / 5);
-  }
-
-  .song:nth-child(2n+3) {
-    margin-left: 0;
-  } */
 }
 
 @media all and (max-width: 680px) {
@@ -41,24 +41,8 @@
     margin: 0;
   }
 
-  .in-playback {
-    flex-basis: 175px;
-  }
-
   .main-nav ul {
     width: 90%;
-  }
-
-  .album-cover {
-    width: 140px;
-  }
-
-  .cover-title {
-    margin: 0 0 0 2px;
-  }
-
-  .player-tools {
-    width: 160px;
   }
 
   .song-cont {
@@ -78,29 +62,38 @@
   }
 }
 
-@media all and (max-width: 575px) {
+@media all and (max-width: 552px) {
+  .main {
+    width: calc(100% - 50px);
+  }
+
   .nav-bar {
     width: 50px;
   }
 
   .nav {
     margin-top: 10px;
+    flex-grow: 1;
   }
 
   .nav-text {
     display: none;
   }
 
-  .nav a {
+  .nav ul li a {
     padding: 0;
     border: none;
   }
 
-  .nav a img {
+  .nav ul li a img {
     margin: 0 auto;
   }
 
   .playlist {
+    display: none;
+  }
+
+  .playlist-list {
     display: none;
   }
 
@@ -131,24 +124,39 @@
   .user a img {
     margin: 0 auto;
   }
+}
 
-  .main {
-    width: calc(100% - 50px);
+@media all and (max-width: 510px) {
+  .album-cover img {
+    display: none;
+  }
+
+  .player-tools {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .volume-cont {
+    display: none;
   }
 }
 
-@media all and (max-height: 629px) {
-  .playlist ul {
-    height: 155px;
+@media all and (max-width: 490px) {
+  .playback-icon {
+    display: none;
   }
 }
 
-@media all and (max-height: 570px) {
-  .playlist ul {
-    height: 100px;
+@media all and (max-width: 425px) {
+  .in-playback {
+    display: none;
   }
 
-  .user-cont {
-    position: relative;
+  .player-tools {
+    display: none;
+  }
+
+  .player-bar {
+    justify-content: center;
   }
 }

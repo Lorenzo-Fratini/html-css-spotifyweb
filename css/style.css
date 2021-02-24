@@ -9,7 +9,7 @@
 }
 
 body {
-  max-width: 100%;
+  max-width: 100vw;
   max-height: 100vh;
   font-size: 14px;
   font-family: "Nunito Sans";
@@ -59,9 +59,9 @@ i {
 .nav-bar {
   width: 230px;
   height: 100%;
-  padding: 0 0 80px 0;
   background: #000;
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 /* logo */
@@ -81,7 +81,7 @@ i {
 }
 
 /* nav */
-.nav a {
+.nav ul li a {
   height: 30px;
   display: block;
   display: flex;
@@ -90,11 +90,11 @@ i {
   border-left: 3px solid rgba(0, 0, 0, 0);
 }
 
-.nav a:nth-child(1n+2) {
+.nav ul li a:nth-child(1n+2) {
   margin-top: 5px;
 }
 
-.nav a img {
+.nav ul li a img {
   width: 25px;
   color: #a3a3a3;
 }
@@ -127,9 +127,10 @@ a.checked {
   font-size: 2rem;
 }
 
-.playlist ul {
-  height: 43%;
+.playlist-list {
   overflow: auto;
+  flex-grow: 1;
+  padding: 0 13px;
 }
 
 /* user */
@@ -137,10 +138,6 @@ a.checked {
   width: 100%;
   height: 80px;
   padding: 0 13px;
-  background: #000;
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
 
 .installation {
@@ -239,7 +236,7 @@ a.checked {
 }
 
 .song {
-  width: calc(100% / 7);
+  width: 14%;
   text-align: center;
 }
 
@@ -300,22 +297,25 @@ a.checked {
 }
 
 .in-playback {
-  width: 220px;
-  padding: 20px 0 20px 10px;
+  flex-basis: 220px;
+  padding: 20px 10px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
+.in-playback div {
+  margin-right: 5px;
+}
+
 .album-cover {
-  width: 140px;
+  flex-basis: 140px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .album-cover img {
-  width: 50px;
+  width: 35%;
 }
 
 .playback-icon i:nth-child(1n+2) {
@@ -325,6 +325,12 @@ a.checked {
 .playback-icon i:hover {
   color: #fff;
 }
+
+.cover-title {
+  margin-left: 5px;
+}
+
+
 
 /* player */
 .player-controller {
@@ -361,9 +367,10 @@ a.checked {
   margin-left: 5px;
 }
 
+/* player tools */
 .player-tools {
-  width: 190px;
-  padding: 20px 10px 20px 0;
+  flex-basis: 220px;
+  padding: 20px 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -371,8 +378,10 @@ a.checked {
 
 .player-tools i {
   color: #fff;
+  margin-left: 5px;
 }
 
+/* time/volume bar */
 .volume-cont,
 .time-cont {
   display: flex;
@@ -391,11 +400,10 @@ a.checked {
 
 .time-bar,
 .volume-bar {
-  height: 4px;
+  height: 3px;
   background: #5a5a5a;
   border-radius: 5px;
   cursor: pointer;
-  position: relative;
 }
 
 .time-bar {
@@ -408,20 +416,18 @@ a.checked {
 
  .time-active,
  .volume-active {
-  height: 4px;
+  height: 3px;
   background: #ccc;
   border-radius: 5px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
+  position: relative;
 }
 
 .time-active {
-  width: 75px;
+  width: 10%;
 }
 
 .volume-active {
-  width: 35px;
+  width: 40%;
 }
 
 .time-active i,
