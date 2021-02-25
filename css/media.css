@@ -1,6 +1,6 @@
 @media all and (max-width: 991px) {
-  .body {
-    font-size: 13px;
+  .main-nav ul {
+    width: 90%;
   }
 
   .song {
@@ -136,6 +136,10 @@
     justify-content: center;
   }
 
+  .player-tools i {
+    margin-left: 15px;
+  }
+
   .volume-cont {
     display: none;
   }
@@ -148,15 +152,15 @@
 }
 
 @media all and (max-width: 425px) {
+  .player-bar {
+    justify-content: center;
+  }
+
   .in-playback {
     display: none;
   }
 
   .player-tools {
     display: none;
-  }
-
-  .player-bar {
-    justify-content: center;
   }
 }
