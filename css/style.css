@@ -99,7 +99,7 @@ i {
 
 a.checked {
   color: #fff;
-  border-left: 3px solid #adff2f;
+  border-left: 3px solid #adff2f !important;
 }
 
 .nav-text {
